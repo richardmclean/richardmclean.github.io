@@ -430,7 +430,8 @@ d3.csv('absence_per_team.csv', function(error, data) {
     'DEPARTMENT',
     'SERVICE',
     'SECTION',
-    'TEAM'
+    'TEAM',
+    'REASON'
   ];
   // optional, but must be [min, med, max];
   color_range =  ['#00ff00', 'hsl(47,97%,55%)','hsl(5,99%,53%)' ]; 
@@ -459,9 +460,9 @@ d3.csv('absence_per_team.csv', function(error, data) {
     buildHierarchy(
       data, 
       hier, 
-      'HEADCOUNT',
+      'HEADCOUNT', 
       'PERIOD_FTE', 
-      'FTE_DAYS_LOST', 
+      'FTE_DAYS_LOST',
       true, // Tell it to compute a percentage
       'FTE_DAYS_LOST', // numerator
       'PERIOD_FTE', // denominator
