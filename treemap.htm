@@ -459,9 +459,9 @@ d3.csv('absence_per_team.csv', function(error, data) {
     buildHierarchy(
       data, 
       hier, 
-      'FTE_DAYS_LOST', 
-      'PERIOD_FTE', 
       'HEADCOUNT',
+      'PERIOD_FTE', 
+      'FTE_DAYS_LOST', 
       true, // Tell it to compute a percentage
       'FTE_DAYS_LOST', // numerator
       'PERIOD_FTE', // denominator
